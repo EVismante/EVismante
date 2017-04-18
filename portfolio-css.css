@@ -10,7 +10,7 @@ body {
 @media handheld, screen and (max-width: 480px) {
 header {
 	position: fixed;	
-	width: 100%;
+	width: auto;
 	font-family:Calibri, "Helvetica Neue", Arial, sans-serif;
     font-weight:200;
     -webkit-font-smoothing:antialiased;
