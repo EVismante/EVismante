@@ -29,7 +29,6 @@ article {
 	
 	font-size:17px;
 	font-weight:200;
-	margin-top:100px;
 	margin-left: 5px;
 }}
 
@@ -173,15 +172,15 @@ h2{
 	padding-bottom: 60px;
 }
 
-#kaleidoscope {position:absolute; left: 470px; top: 200px display:block; padding-bottom: 50px;}
+#kaleidoscope {position:absolute; left: 470px; top: 200px display:block;}
 #antenna {position:absolute; left: 505px; top: 700px}
 
 }
 
 @media screen and (max-width: 480px) {
 	
-.img1 {float: left; margin-left: 5px;}
-.img2 {float: left; margin-left: 5px;}
+.img1 {float: left; margin-left: 5px; margin-bottom:30px; }
+.img2 {float: left; margin-left: 5px; margin-bottom:30px;}
 #kaleidocope {float:left; margin-left: 0;}
 #antenna {float: left; margin-left: 0;}
 	
