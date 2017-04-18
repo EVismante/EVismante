@@ -6,6 +6,9 @@ body {
     padding: 0 !important;
 	background-color:#FFF;
 }
+* {
+margin: 0;
+padding: 0; }
 
 @media handheld, screen and (max-width: 480px) {
 header {
