@@ -7,18 +7,18 @@ body {
 	background-color:#FFF;
 }
 
-@media handheld, screen and (max-width: 450px) {
+@media handheld, screen and (max-width: 480px) {
 header {
 	position: fixed;	
 	width: 100%;
 	font-family:Calibri, "Helvetica Neue", Arial, sans-serif;
     font-weight:200;
     -webkit-font-smoothing:antialiased;
-	font-size:60px;
-    height: auto;
+	font-size:40px;
+    height: 20%;
     overflow: hidden;
 	margin-top:0px;
-	margin-left:30px;
+	margin-left:0px;
 	z-index: 2;
    
 }}
@@ -167,12 +167,12 @@ h2{
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
 	
-.img1 {float: left;}
-.img2 {float: left;}
-#kaleidocope {float:left,}
-#antenna {float: left;}
+.img1 {float: left; margin-left: 0;}
+.img2 {float: left; margin-left: 0;}
+#kaleidocope {float:left; margin-left: 0;}
+#antenna {float: left; margin-left: 0;}
 	
 }
 
