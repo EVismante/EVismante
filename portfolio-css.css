@@ -206,11 +206,11 @@ h2{
 	
 }
 
-.sidenav .closebtn {
+.closebtn {
     left: inherit;
     font-size: inherit;
-    margin-left: inherit;
-	padding-top: 8px;
+    margin-left: 15px;
+	padding: 15px;
 	background-color: black;
 	color: white;
 }
