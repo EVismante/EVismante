@@ -109,7 +109,7 @@ a:hover {
 	
 	}}
 
-@media handheld, screen and (max-width: 481px) {
+@media handheld and (max-width: 481px) {
 	.icon {
 		width:100%;
 	}
