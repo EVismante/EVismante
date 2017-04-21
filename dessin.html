@@ -16,8 +16,7 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-
-$(document).ready(function(){var modal = document.getElementById('myModal');
+	      $(document).ready(function(){var modal = document.getElementById('myModal');
 
 var img = $('.myImg');
 var modalImg = $("#img01");
@@ -36,6 +35,7 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }}
 	});
+
 </script>
   
   
@@ -91,28 +91,4 @@ window.onclick = function(event) {
 
 </article>
 </body>
-
-<script>
-
-var modal = document.getElementById('myModal');
-
-var img = $('.myImg');
-var modalImg = $("#img01");
-$('.myImg').click(function(){
-    modal.style.display = "block";
-    var newSrc = this.src;
-    modalImg.attr('src', newSrc);
-
-});
-
-
-var span = document.getElementsByClassName("close")[0];
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }}
-</script>
-
-
 </html>
