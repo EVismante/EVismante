@@ -322,6 +322,7 @@ footer {
     display: block;
     width: auto;
     max-width: 700px;
+	z-index: 100;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
