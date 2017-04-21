@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Egle VISMANTE</title>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 	<meta id="viewport" name="viewport" content ="width=device-width" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <link href="portfolio-css.css" rel="stylesheet" type="text/css">
       <script>
 	  //MENU
@@ -15,7 +15,36 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
-</script> 
+
+
+$(document).ready(function(){var modal = document.getElementById('myModal');
+
+var img = $('.myImg');
+var modalImg = $("#img01");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+
+});
+
+
+var span = document.getElementsByClassName("close")[0];
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }}
+	});
+</script>
+  
+  
+  
+
+
+
+
+
 </head>
 	
 	
