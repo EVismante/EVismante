@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  background: white;
+  transition: 3s all;
+  margin: 0;
+  padding: 0;
+  height: 1500px;
+}
+
+h1 {
+	z-index: 1;
+	font-family: Calibri, "Helvetica Neue", Arial, sans-serif;
+	font-size:60px;
+}
+
+
+
+h2 {
+	font-family: Candara, Calibri, sans-serif;
+	color: black;
+	display:inline;
+	padding:10px;	
+}
+
+a {
+	text-decoration: none;
+}
+
+.imag {
+filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  transition: all 0.4s;
+}
+
+.imag:hover {
+	  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.text {
+	font-family: Calibri, "Helvetica Neue", Arial, sans-serif;
+    font-weight:200;
+    -webkit-font-smoothing:antialiased;
+	font-size:20px;
+	color: #666;
+	padding-right:70px;
+	padding-left:10px;
+}
+
+.menu {
+	opacity: 0;
+	
+}
+
+
+.menu1 {
+	margin-left: 30%;
+	margin-top:10%;
+	position:fixed;
+}
+
+.menu2 {
+	margin-left: 44%;
+	margin-top:10%;
+	position:fixed;
+}
+
+.menu3 {
+	margin-left: 60%;
+	margin-top:10%;
+	position:fixed;
+}
+
+.animate {
+	height:0px;
+	width:100%;
+	background:#000;
+	z-index:-1;
+	float:left;
+	
+}
+
+.name {
+	position:fixed;
+	float:left;
+	bottom:0px;
+	color: white;
+	font-family: Candara, Calibri, sans-serif;
+	letter-spacing: 3px;
+	opacity: 0;
+	z-index: 1;
+	padding:50px;
+	
+	
+}

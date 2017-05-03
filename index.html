@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Egle Vismante</title>
+<link rel="stylesheet" type="text/css" href="port-css.css"> 
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<script>
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();    
+    if (scroll <= 50) {
+        $(".menu").removeClass("menu");
+		
+    }
+});
+</script>
+<script>
+$(document).ready(function(){
+	$(".animate").animate({height: '700px'}, 900, "swing", function() {
+		$(".name").animate({height: '50px', opacity: '0.7'}, 900, "swing")
+	
+	});
+	
+});
+</script>
+
+</head>
+
+<body>
+<div class="animate"></div>
+
+<div class="menu">
+<div class="menu1">
+    	<a href="https://evismante.github.io/propos.html"> <h2>CV</h2></a>
+    </div>
+    <div class="menu2">
+   	 	<a href="design.html"><h2>Design</h2></a>
+    </div>
+    <div class="menu3">
+    	<a href="https://evismante.github.io"> <h2>Portfolio</h2></a>
+    </div>
+    </div>
+    
+    <div>
+    <div class="name">EGLE VISMANTE</div>
+</div>
+</body>
+
+</html>
