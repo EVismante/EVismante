@@ -15,13 +15,22 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }</script> 
+	
       
   <style> 
   .sidenav {
 
 	width: 0;
 	
-}
+	  }
+	  
+ #welcome {
+	display:none;
+	margin-left:30%;
+	margin-top:10%; 
+	overflow: hidden;
+	opacity: 0.9;
+ }
   
   </style>
   
@@ -55,7 +64,15 @@ function closeNav() {
 
 
 </header>
-
+<div>
+	<img id="welcome" src="dessin.jpg">
+</div>
 
 </body>
+	<script>
+$(document).ready(function(){
+	$("#welcome:hidden:first").fadeIn( 900, "swing")
+	
+});
+</script>
 </html>
