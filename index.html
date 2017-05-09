@@ -5,45 +5,92 @@
 <title>Egle Vismante</title>
 <link rel="stylesheet" type="text/css" href="port-css.css"> 
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+
 <script>
-$(window).scroll(function() {    
-    var scroll = $(window).scrollTop();    
-    if (scroll <= 50) {
-        $(".menu").removeClass("menu");
-		
-    }
-});
-</script>
-<script>
-$(document).ready(function(){
+$(document).ready(function() {
 	$(".animate").animate({height: '700px'}, 900, "swing", function() {
-		$(".name").animate({height: '50px', opacity: '0.7'}, 900, "swing")
+	$(".name").animate({height: '50px', opacity: '0.7'}, 800, "swing", 
+				function() {
+					$(".image").animate({opacity: '1'}, 700, "swing")
+					})
 	
 	});
 	
 });
+
+$(window).click(function() {    
+    
+        $(".menu").removeClass("menu");
+		$(".animate").animate({opacity: '0'}, 900, "swing", function() {
+			$(".animate").css("display", "none")});
+		
+    }
+);
+
 </script>
 
 </head>
 
 <body>
-<div class="animate"></div>
 
-<div class="menu">
+    <div class="animate"><img class="image" src="photo.jpg"></div>
+    <div class="name">EGLE VISMANTE</div>
+
+
+
+<div class="menu" id="menu">
 <div class="menu1">
-    	<a href="https://evismante.github.io/cv.html"> <h2>CV</h2></a>
+    	<h2 >CV</h2>
     </div>
     <div class="menu2">
    	 	<a href="https://www.behance.net/EgleVismante"><h2>Design</h2></a>
     </div>
     <div class="menu3">
-    	<a href="https://evismante.github.io/index1.html"> <h2>Art</h2></a>
+    	<a href="https://evismante.github.io/index1.html"><h2>Art</h2></a>
     </div>
     </div>
     
-    <div>
-    <div class="name">EGLE VISMANTE</div>
+
+
+
+
+
+
+
+<div class="text cv-none">
+<article>
+
+<br>
+<p>Née en 1990<span style="color:#CCC;">|</span>Lituanie<span style="color:#CCC;">|</span>vit et travaille à Nice, France</p>
+<br>
+<p> 2016<span style="color:#CCC;">|</span> DNSEP à ENSA Villa Arson, Nice, France</p>
+<p> 2014<span style="color:#CCC;">|</span> DNAP à ENSA Villa Arson, Nice, France</p>
+
+<br>
+<br>
+	<h2>Expositions</h2>
+<p> 2016<span style="color:#CCC;">|</span> RÊVEZ ! <span style="color:#CCC;">|</span>
+Exposition et prix Yvon Lambert pour la jeune création<span style="color:#CCC;">|</span>Avignon</p>
+<p> 2016<span style="color:#CCC;">|</span>¡ A PROPOS !<span style="color:#CCC;">|</span> Exposition des diplômés 2016<span style="color:#CCC;">|</span>Villa Arson, Nice</p>
+<p> 2016<span style="color:#CCC;">|</span>vidéo festival Instants Numériques<span style="color:#CCC;">|</span>Marseille</p>
+<p> 2014<span style="color:#CCC;">|</span>festival Transnumériques<span style="color:#CCC;">|</span> Mons, Belgique </p>
+<br>
+	<h2>Publications</h2>
+
+	<p>Capicua | Stereoeditions | 2017</p>
+	
+
+
+<br>
+
+
+</article>
 </div>
 </body>
-
+<script>
+$(".menu").click(function(){
+    $(".cv-none").toggle("cv-none", 100, "swing");
+	$("body").css("overflow", "auto");
+});
+</script>
 </html>
