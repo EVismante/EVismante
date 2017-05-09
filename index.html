@@ -19,7 +19,7 @@ $(document).ready(function() {
 });
 
 $(window).click(function() {    
-    
+    	$("body").css("overflow", "scroll");
         $(".menu").removeClass("menu");
 		$(".animate").animate({opacity: '0'}, 900, "swing", function() {
 			$(".animate").css("display", "none")});
@@ -90,7 +90,7 @@ Exposition et prix Yvon Lambert pour la jeune création<span style="color:#CCC;"
 	<script>
 $(".menu").click(function(){
     $(".cv-none").toggle("cv-none", 100);
-	$("body").css("overflow", "scroll");
+
 });
 </script>
 </html>
