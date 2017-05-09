@@ -28,12 +28,7 @@ $(window).click(function() {
 );
 
 </script>
-<script>
-$(".menu").click(function(){
-    $(".cv-none").toggle("cv-none", 100, "swing");
-	$("body").css("overflow", "auto");
-});
-</script> 
+ 
 </head>
 
 <body>
@@ -92,4 +87,10 @@ Exposition et prix Yvon Lambert pour la jeune création<span style="color:#CCC;"
 </article>
 </div>
 </body>
+	<script>
+$(".menu").click(function(){
+    $(".cv-none").toggle("cv-none", 100);
+	$("body").css("overflow", "scroll");
+});
+</script>
 </html>
