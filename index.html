@@ -19,10 +19,12 @@ $(document).ready(function() {
 });
 
 $(window).click(function() {    
-    	$("body").css("overflow", "scroll");
+ 
         $(".menu").removeClass("menu");
 		$(".animate").animate({opacity: '0'}, 900, "swing", function() {
-			$(".animate").css("display", "none")});
+			$(".animate").css("display", "none", function() {
+			$("body").css("overflow", "scroll");})
+		});
 		
     }
 );
