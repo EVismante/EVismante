@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cheval Show</title>
+<link href="arkliai-css.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=1200px, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script>
+	$(document).on('scroll', function() {
+  if ($(document).scrollTop() >= 200) {
+    $('.nav img').removeClass('logos');
+	$('.nav img').addClass('sticky');
+  } else {
+    $('.nav img').removeClass('sticky');
+	$('.nav img').addClass('logos');
+  }
+});
+
+
+
+</script>
+  <script>
+	$(document).on('scroll', function() {
+  if ($(document).scrollTop() >= 300) {
+	$('ul').removeClass('ul-big');
+  } else {
+    $('ul').addClass('ul-big');
+  }
+});
+
+$(document).on('scroll', function() {
+  if ($(document).scrollTop() >= 300) {
+	$('.nav').addClass('ul-bcg');
+  } else {
+    $('.nav').removeClass('ul-bcg');
+  }
+});
+
+
+
+
+</script>
+
+<style> 
+body {background-image:url(1.jpg);} </style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="nav">
+   
+     <div class="ul-left">
+   <ul class="ul-big">
+   <li><a href=horses.html>CHEVAUX</a></li>
+   <li><a href=shows.html>SHOWS</a></li>
+   <li><a href=#>DATES</a></li>
+   </ul></div>
+
+   <img class='logos' src="logo.png" >
+   
+     <div class="ul-right">
+   <ul class="ul-big">
+   <li><a href=#>PLANNING</a></li>
+   <li><a href=contact.html>CONTACT</a></li>
+   
+   </ul></div>
+        
+        </div> 
+        
+ </div> <!-- end .header -->
+ 
+ 
+ 
+ 
+<div class="placeholder"></div>
+  <div class="content">
+<h1> Bienvenue sur Notre Site</h1>
+  	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus risus eu mi auctor, sit amet malesuada nulla laoreet. Donec non rutrum dolor. Etiam vel egestas odio, eu facilisis nulla. Nunc ultrices ultrices suscipit. Suspendisse luctus, risus vitae molestie suscipit, purus ex gravida elit, a maximus purus purus eu purus. Sed nulla nibh, pulvinar ut faucibus vel, rutrum ac neque. Aliquam viverra sodales mauris, quis interdum turpis bibendum sed. Aenean dignissim vel massa ac ultricies. Praesent volutpat est fermentum, convallis arcu vitae, ullamcorper lectus. Aenean ut ullamcorper justo. Cras tincidunt purus nulla, quis pharetra massa molestie placerat. Aliquam erat volutpat. Aenean sed posuere augue.</p>
+
+<p>Vestibulum at congue elit. Mauris ullamcorper elit et massa pharetra venenatis. Aenean at erat ac quam interdum vulputate. Mauris sagittis mi sit amet lectus maximus, a commodo lorem gravida. Integer at turpis nec ante lobortis luctus in a odio. Pellentesque laoreet convallis facilisis. Donec consectetur neque eget metus pharetra consectetur. Nam porta laoreet pretium. </p>
+  
+  
+  
+
+  
+  
+  
+    <!-- end .content --></div></div>
+  
+ 
+  <!-- end .container --></div>
+  
+<div class="footer">
+ 
+  
+  
+    <h2>Suivez Nous</h2>
+    <div class="round"></div>
+     <div class="round"></div>
+      <div class="round"></div>
+    <!-- end .footer --></div>
+
+</body>
+</html>
