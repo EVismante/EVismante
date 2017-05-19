@@ -2,7 +2,6 @@
 /* CSS Document */
 
 body {
-  transition: 3s all;
   margin: 0;
   padding: 0;
   overflow:hidden;
@@ -71,6 +70,7 @@ a {
 	padding:50px;
 	
 	
+	
 }
 
 
@@ -100,3 +100,89 @@ a {
 	margin-top:5%;
 	position:fixed;
 }
+
+
+/*---------------------- animation index*/
+
+.rotate {
+    -webkit-animation: in 1s;
+	float: right;
+}
+.out {
+   animation-name: out;
+   animation-duration:1s;
+
+}
+.over {
+   animation-name: in;
+   animation-duration:1s;
+   animation-iteration-count:1;
+}
+
+@keyframes in {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+}
+@keyframes out {
+    from {
+        transform: rotate(90deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+/*----------------------DESIGN*/
+
+.design-head {
+	background-color:black;
+	width:100%;
+	height:600px;
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica, Calibri, sans-serif;
+	font-size: 200px;
+	line-height: 70%;
+	font-weight:bold;
+}
+	
+span {
+	color: white;
+	background-color: black;
+	margin-top: 10%;
+		opacity: 0.8;
+}
+
+.design-foot {
+	background-color:black;
+	width:100%;
+	height:300px;
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica, Calibri, sans-serif;
+	line-height: 70%;
+	font-weight:bold;
+	text-align: right;
+	font-size: 80px;
+	text-decoration: none;
+	color:white;
+}
+
+#a {
+	text-decoration: none;
+	color:white;
+}
+
+#a:hover {
+	color:orange;
+}
+
+
+	
+
+
