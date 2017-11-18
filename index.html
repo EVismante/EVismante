@@ -69,10 +69,14 @@ function closeNav() {
 </div>
 
 </body>
-	<script>
-$(document).ready(function(){
-	$("#welcome:hidden:first").fadeIn( 900, "swing")
+<script>
 	
-});
+
+var span = document.getElementsByClassName("close")[0];
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }}
+	});
 </script>
 </html>
