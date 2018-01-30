@@ -6,58 +6,38 @@
 <meta charset="UTF-8">
 <meta name="E.Vismante" content="Portfolio de l'artiste">
 
-	<meta id="viewport" name="viewport" content ="width=device-width" />
-<link href="portfolio-css.css" rel="stylesheet" type="text/css">
+<meta id="viewport" name="viewport" content ="width=device-width" />
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 480px)" href="mobile.css" />
+<link rel="stylesheet" media="screen and (min-width: 481px)" href="laptop.css" />
+<link rel="stylesheet" href="style.css" />
+
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script> 
-function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-
-</script> 
-<style> 
- #welcome {
-	display:none;
-	opacity: 0.9; 
-	position: absolute;
-	left:30%;
-	top: 20vh;
- }  
-  
-</style>
-   
- 
-
 </head>
+
 <body>
-<header>
-<a href='index.html' id="vismante">VISMANTE</a>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">III</a>
-        | 
-        <a href="propos.html">À PROPOS</a>
-        |
-        <li ><span>PORTFOLIO</span>
-		|
-  <a class="slider" href="dessin.html">dessin</a>
-  <a class="slider" href="video.html">video</a>
-  <a class="slider" href="projets.html">projets</a>
-  |
+  <header>
+      <a href='index.html' id="vismante">VISMANTE :</a>
+      <ul id="mySidenav" class="sidenav">
+        <li><a href="fr/propos.html">À PROPOS</a></li>
+        <li>|</li>
+        <li><span>PORTFOLIO</span></li>
+      	<li>|</li>
+        <li><a class="slider" href="fr/dessin.html">dessin</a></li>
+        <li><a class="slider" href="fr/video.html">vidéo</a></li>
+        <li><a class="slider" href="fr/projets.html">projets</a></li>
+        <li>|</li>
+      </ul>
+  </header>
 
-</div>
-
-<!-- Use any element to open the sidenav -->
-<span class="closebtn" onclick="openNav()">III</span>
-
-
-</header>
-<div>
-	<img id="welcome" src="dessin.jpg" alt="Welcome">
-</div>
+  <div>
+	 <img id="welcome" src="img/dessin.jpg" alt="Welcome">
+  </div>
+  <div id="lang">
+    <span><a href="index.html">FR</a></span>
+    <span><a href="en/index.html">EN</a></span>
+    <span><a href="lt/index.html">LT</a></span>
+  </div>
 
 </body>
 <script>

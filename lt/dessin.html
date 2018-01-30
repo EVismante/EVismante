@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Egle VISMANTE</title>
+<meta charset="UTF-8">
+<meta name="E.Vismante" content="Portfolio of artist">
+
+<meta id="viewport" name="viewport" content ="width=device-width" />
+<link href="../reset.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 480px)" href="../mobile.css" />
+<link rel="stylesheet" media="screen and (min-width: 481px)" href="../laptop.css" />
+<link rel="stylesheet" href="../style.css" />
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+
+</head>
+	
+	
+<body>
+<header>
+<a href='index.html' id="vismante">VISMANTE</a>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">III</a>
+        <li style="color:#CCC;">|</li>
+        <li><a href="propos.html">APIE</a></li>
+        <li style="color:#CCC;">|</li>
+        <li ><span>PORTFOLIO</span>
+		<li style="color:#CCC;">|</li>
+  <a class="hover" href="dessin.html">piešiniai</a>
+  <a class="hover" href="video.html">video</a>
+    <a class="hover" href="projets.html">projektai</a>
+  <li style="color:#CCC;">|</li>
+
+</div>
+
+<span class="closebtn" onclick="openNav()">III</span>
+
+</header>
+
+
+</body>
+<article>
+
+<img class="myImg icon"  src="../img/dessin/parade1.jpeg" alt="dessin">
+<img class="myImg icon" src="../img/dessin/dessin-bl1.jpeg" alt="dessin">
+<img class="myImg icon" src="../img/dessin/dessin-bl2.jpeg" alt="dessin">
+<img class="myImg icon" src="../img/dessin/dessin1.jpeg" alt="dessin">
+<img class="myImg icon" src="../img/dessin/dessin2.jpeg" alt="dessin">
+<img class="myImg icon" src="../img/dessin/dessin0.jpeg" alt="dessin">
+<img class="myImg icon" src="../img/dessin/dessin3.jpeg" alt="dessin">
+<img class="myImg icon" src="../img/dessin/godot.jpeg" alt="dessin">
+<img class="myImg icon" src="../img/dessin/dessin9.jpeg" alt="dessin">
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
+
+
+</article>
+</body>
+<script>
+$(document).ready(function(){var modal = document.getElementById('myModal');
+
+var img = $('.myImg');
+var modalImg = $("#img01");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+
+});
+ 
+
+var span = document.getElementsByClassName("close")[0];
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }}
+	});
+	
+</script>
+</html>
